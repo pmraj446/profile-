@@ -1,0 +1,388 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+.header{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("\hero-22.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.navbar{
+	width: 100%;
+	height: 10vh;
+	background-color: black;
+	opacity: 0.8;
+}
+
+.logo_web{
+	color: white;
+	font-size: 25px;
+	font-weight: 700;
+	opacity: 1;
+}
+
+.logo_web span{
+	color: rgb(153,0,153) !important;
+}
+
+.nav-iten{
+	margin: 0px 6px;
+}
+
+.nav-item{
+	color: rgba(255,255,255,0.795);
+	font-weight: 500;
+	font-size: 12px !important;
+	text-transform: uppercase;
+}
+
+.nav_link:hover, .active{
+	color: rgb(153,0,153) !important;
+}
+
+.home_section{
+	width:100%;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+}
+
+.heading_sm{
+	font-size: 42px;
+	color: white;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: -8px 8px;
+}
+
+.heading_lg{
+	color: white;
+	font-size:71px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.heading_md{
+	font-size: 19px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.61);
+	margin: -10px 11px;
+}
+
+.para_home{
+	color: rgba(255,255,255,0.822);
+	font-weight: 500;
+	max-width: 400px;
+	font-size: 14px;
+	line-height: 24px;
+	margin: 29px 8px;
+}
+
+.btn_home{
+	display: inline-block;
+	padding: 8px 24px;
+	font-size: 13px;
+	font-weight: 600;
+	color: rgba(255,255,255,0.877);
+	text-decoration: none;
+	border: 2px solid rgba(255,255,255,0.534);
+	border-radius: 2px;
+	margin: 0px 3px;
+	transition: 0.2s ease-out;
+}
+
+.btn_home:hover{
+	background-color: rgb(153,0,153);
+	padding: 9px 24px;
+	border: none;
+}
+
+.btn_2{
+	background-color: rgb(153,0,153);
+	border: none;
+	padding: 9px 24px;
+	margin: 0px 3px;
+}
+
+.social_icons_container{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 10vh;
+}
+
+.icons_social{
+	color: rgba(176, 105, 213, 0.8);
+	margin: 0px 4px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.icons_social:hover{
+	color: rgb(255,51,255);
+}
+
+.about{
+	width: 100%;
+	height: 80vh;
+	background-color: rgb(19,16,16);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.heading_about{
+	display: inline-block;
+	font-size: 31px;
+	font-weight: 500;
+	color: rgba(231,231,231,0.815);
+	text-align: center !important;
+	margin-bottom: 64px;
+	position: relative;
+}
+
+.heading_about::after{
+	content: '';
+	position: absolute;
+	border: 3px solid rgb(153,0,153);
+	bottom: -9px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 58px;
+	border-radius: 11px;
+}
+
+.heading_about span{
+	color: rgb(153,0,153);
+}
+
+.about_img{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 2;
+}
+
+.about_img::before{
+	content: '';
+	position: absolute;
+	bottom: -21px;
+	right: 85px;
+	width: 55%;
+	height: 80%;
+	background-color: rgb(153,0,153);
+	z-index: -1;
+}
+
+.about_img::after{
+	content: '';
+	position: absolute;
+	top: -21px;
+	left: 85px;
+	width: 55%;
+	height: 80%;
+	background-color: rgb(153,0,153);
+	z-index: -1;
+}
+
+.image_about{
+	width: 320px;
+	height: 320px;
+	background-image: url("p1.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.heading_about_content{
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: rgb(153,0,153);
+	margin-bottom: 7px;
+}
+
+.para_content_about{
+	font-size: 12px;
+	line-height: 21px;
+	color: rgba(231,231,231,0.767);
+}
+
+.para_content_about span{
+	color: rgb(218,184,32)
+}
+
+.our_details{
+	width: 100%;
+	height:auto;
+	background-color: rgb(27,23,23);
+	padding: 3px 0px;
+}
+
+.item_details{
+	margin: 10px 0px;
+	list-style: none;
+	color: rgb(153,0,153);
+	font-style: 12px;
+}
+
+.item_details span{
+	color: rgba(255,255,255,0.541);
+	margin: 0px 3px;
+}
+
+.icons_social_about{
+	margin: 0px 7px;
+	color: rgba(255,255,255,0.849);
+	cursor: pointer;
+}
+
+.btn_content_about{
+	text-decoration: none;
+	display: inline-block;
+	background-color: rgb(212,65,90);
+	border-radius: 2px;
+	color: white;
+	font-size: 13px;
+	padding: 9px 26px;
+	margin: 16px 0px;
+	transition: 0.3s ease-in;
+}
+
+.btn_content_about:hover{
+	background-color: rgb(232,85,90);
+}
+
+.contact{
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(26,24,24);
+	/*text-align: center;*/
+	padding: 18px 0px 18px 0px;
+}
+
+.heading_contact{
+	text-align: center;
+	display: block !important;
+}
+
+.content_contact{
+	width: 100%;
+	height: 60vh;
+	margin: 24px 0px;
+	padding: 10px;
+}
+
+.heading_content_contact{
+	color: rgba(255,255,255,0.849);
+	font-size: 38px;
+	font-weight: 700;
+	margin: 20px 0px;
+}
+
+.para_content_contact{
+	font-size: 14px;
+	color: rgba(255,255,255,0.74);
+	line-height: 26px;
+	margin: 14px 0px;
+}
+
+.form-control{
+	background-color: transparent !important;
+	outline: none;
+	box-shadow: none !important;
+	border-radius: 0px !important;
+	border: none !important;
+	border-bottom: 1px solid rgba(255,255,255,0.720) !important;
+	margin: 30px 0px;
+	color: rgba(255,255,255,0.89) !important;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 6px !important;
+}
+
+.form-control::placeholder{
+	color: rgba(255,255,255,0.603) !important;
+}
+
+.btn_contact{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	font-size: 13px;
+	color: white;
+	background-color: rgb(212,65,90);
+	letter-spacing: 3px;
+	font-weight: 600;
+	padding: 11px 19px;
+	text-transform: uppercase;
+	border: none !important;
+	margin: 4px 0px;
+	transition: 0.3s ease-in-out;
+}
+
+.btn_contact:hover{
+	background-color: rgb(232,85,90);
+}
+
+.content_contact_details{
+	width: 100%;
+	height: 100%;
+	padding: 11px 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center !important;
+}
+
+.heading_details{
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.para_details{
+		font-size: 12px;
+		color: rgba(255,255,255,0.61);
+		line-height: 24px;
+		margin: 0px;
+}
+
+.second_para_details{
+	font-size: 13px;
+	color: rgb(153,0,153);
+	margin: 11px 0px;
+}
+
+.icon_details{
+	color: rgba(153,0,153);
+	padding: 9px;
+	border-radius: 20px;
+	background-color: rgba(253,225,102,0.11);
+	margin: 0px 14px;	
+}
+
+footer{
+	background-color: black;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer span{
+	color: rgba(255,255,255,0.644);
+	font-size: 12px;
+	text-align: center; 
+}
